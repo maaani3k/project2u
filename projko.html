@@ -1,21 +1,31 @@
 DYJO MASZ ROZWIĄZANIE W PLIKU KAKA
 W tym repozytorium!!!! 
-<!DOCTYPE html>
 <html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
 <body>
+    <p id='student'>Student</p>
+    <p id='jan'>Jan Nowak</p>
+    <p id='grupa'>Grupa 1211</p>
 
-<h2>This is the title for the work</h2>
-
-<h3>this is the task notes, this gives you confidence</h3>
-
-<p>this is the job this task makes</p>
-
-<button id="myBtn">Try it</button>
+</body>
 
 <script>
 
-</script>
+    var are_hidden = false;
 
-</body>
-</html>
+    $('#student').click(function() {
+        if(!are_hidden) {
 
+            $('#jan').hide();
+            $('#grupa').hide();
+            are_hidden = true;
+        } else {
+            $('#jan').show();
+            $('#grupa').show();
+            are_hidden = false;
+        }
+    });
