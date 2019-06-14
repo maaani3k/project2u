@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id='student'>Student</p>
+    <p id='jan'>Jan Nowak</p>
+    <p id='grupa'>Grupa 1211</p>
+
+</body>
+
+<script>
+
+    var are_hidden = false;
+
+    $('#student').click(function() {
+        if(!are_hidden) {
+
+            $('#jan').hide();
+            $('#grupa').hide();
+            are_hidden = true;
+        } else {
+            $('#jan').show();
+            $('#grupa').show();
+            are_hidden = false;
+        }
+    });
